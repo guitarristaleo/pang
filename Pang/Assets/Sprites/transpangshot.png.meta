@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1d111033db8e00342a2c5aaca21f7371
-timeCreated: 1455618820
+timeCreated: 1456479349
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -85,9 +85,9 @@ TextureImporter:
     - name: transpangshot_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -96,9 +96,9 @@ TextureImporter:
     - name: transpangshot_2
       rect:
         serializedVersion: 2
-        x: 34
+        x: 36
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -107,9 +107,9 @@ TextureImporter:
     - name: transpangshot_3
       rect:
         serializedVersion: 2
-        x: 52
+        x: 54
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -118,9 +118,9 @@ TextureImporter:
     - name: transpangshot_4
       rect:
         serializedVersion: 2
-        x: 70
+        x: 72
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -129,9 +129,9 @@ TextureImporter:
     - name: transpangshot_5
       rect:
         serializedVersion: 2
-        x: 88
+        x: 90
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -140,9 +140,9 @@ TextureImporter:
     - name: transpangshot_6
       rect:
         serializedVersion: 2
-        x: 106
+        x: 108
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -151,9 +151,9 @@ TextureImporter:
     - name: transpangshot_7
       rect:
         serializedVersion: 2
-        x: 124
+        x: 126
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -162,9 +162,9 @@ TextureImporter:
     - name: transpangshot_8
       rect:
         serializedVersion: 2
-        x: 142
+        x: 144
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -173,9 +173,9 @@ TextureImporter:
     - name: transpangshot_9
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -184,9 +184,9 @@ TextureImporter:
     - name: transpangshot_10
       rect:
         serializedVersion: 2
-        x: 178
+        x: 180
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -195,9 +195,9 @@ TextureImporter:
     - name: transpangshot_11
       rect:
         serializedVersion: 2
-        x: 196
+        x: 198
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -206,9 +206,9 @@ TextureImporter:
     - name: transpangshot_12
       rect:
         serializedVersion: 2
-        x: 214
+        x: 216
         y: 0
-        width: 12
+        width: 10
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -217,9 +217,9 @@ TextureImporter:
     - name: transpangshot_13
       rect:
         serializedVersion: 2
-        x: 232
+        x: 234
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -228,9 +228,9 @@ TextureImporter:
     - name: transpangshot_14
       rect:
         serializedVersion: 2
-        x: 250
+        x: 252
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -239,9 +239,9 @@ TextureImporter:
     - name: transpangshot_15
       rect:
         serializedVersion: 2
-        x: 268
+        x: 270
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -250,9 +250,9 @@ TextureImporter:
     - name: transpangshot_16
       rect:
         serializedVersion: 2
-        x: 286
+        x: 288
         y: 0
-        width: 13
+        width: 11
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

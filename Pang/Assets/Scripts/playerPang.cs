@@ -8,6 +8,7 @@ public class playerPang : MonoBehaviour
     public float fuerzaLateral = 5;
     public float velocidadMaxima = 5;
     public int puntos = 0;
+    public GameObject disparo;
 
     // Use this for initialization
     void Start()
@@ -20,9 +21,11 @@ public class playerPang : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, fuerzaSalto);
+            //GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, fuerzaSalto);
             //GetComponent<Rigidbody2D>().AddForce(Vector2.up * fuerzaSalto);
+            Instantiate(disparo, new Vector3(transform.position.x, -8.03f, 0.31f), Quaternion.identity);
         }
+
         if (Input.GetKey(KeyCode.RightArrow))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(fuerzaLateral, GetComponent<Rigidbody2D>().velocity.y);

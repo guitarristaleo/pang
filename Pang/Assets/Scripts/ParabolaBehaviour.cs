@@ -27,6 +27,10 @@ public class ParabolaBehaviour : MonoBehaviour
         {
 
         }
+        if(col.gameObject.tag == "Disparo")
+        {
+
+        }
     }
 
     void OnCollisionExit2D(Collision2D col)
