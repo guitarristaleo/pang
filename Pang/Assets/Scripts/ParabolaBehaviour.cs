@@ -34,14 +34,12 @@ public class ParabolaBehaviour : MonoBehaviour
     {
         if (collider.gameObject.tag == "Disparo")
         {
-            pelota2.GetComponent<Transform>().localScale = new Vector2(/*pelota2.GetComponent<Transform>().localScale.x * */0.7f, /*pelota2.GetComponent<Transform>().localScale.y * */0.7f);
-            pelota2.GetComponent<ParabolaBehaviour>().xSpeed = 2f;
-
-            pelota1.GetComponent<Transform>().localScale = new Vector2(/*pelota2.GetComponent<Transform>().localScale.x * */0.7f, /*pelota2.GetComponent<Transform>().localScale.y * */0.7f);
-            pelota1.GetComponent<ParabolaBehaviour>().xSpeed = -2f;
+            Instantiate(pelota2, transform.position, Quaternion.identity);
+            pelota2.GetComponent<ParabolaBehaviour2>().xSpeed = 2f;
 
             Instantiate(pelota1, transform.position, Quaternion.identity);
-            Instantiate(pelota2, transform.position, Quaternion.identity);
+            pelota1.GetComponent<ParabolaBehaviour2>().xSpeed = -2f;
+
             Destroy(this.gameObject);
         }
     }

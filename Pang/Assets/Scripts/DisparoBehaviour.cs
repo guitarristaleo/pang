@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DisparoBehaviour : MonoBehaviour {
     private float xSpeed = 0f;
-    private float ySpeed = 3f;
+    private float ySpeed = 5f;
 
 	// Use this for initialization
 	void Start () {
