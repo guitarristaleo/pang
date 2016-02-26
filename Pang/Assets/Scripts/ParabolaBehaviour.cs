@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ParabolaBehaviour : MonoBehaviour
 {
-    private float xSpeed = 2f;
-    private float ySpeed = 1f;
+    public float xSpeed = 2f;
+    public float ySpeed = 1f;
     private float acceleration = -0.5f;
     public GameObject pelota1, pelota2;
 
@@ -34,13 +34,14 @@ public class ParabolaBehaviour : MonoBehaviour
     {
         if (collider.gameObject.tag == "Disparo")
         {
-            Instantiate(pelota1, transform.position, Quaternion.identity);
-            pelota1.GetComponent<Rigidbody2D>().velocity = new Vector2(-this.GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
-            pelota1.GetComponent<Transform>().localScale = new Vector2(0.7f, 0.7f);
+            pelota2.GetComponent<Transform>().localScale = new Vector2(/*pelota2.GetComponent<Transform>().localScale.x * */0.7f, /*pelota2.GetComponent<Transform>().localScale.y * */0.7f);
+            pelota2.GetComponent<ParabolaBehaviour>().xSpeed = 2f;
 
+            pelota1.GetComponent<Transform>().localScale = new Vector2(/*pelota2.GetComponent<Transform>().localScale.x * */0.7f, /*pelota2.GetComponent<Transform>().localScale.y * */0.7f);
+            pelota1.GetComponent<ParabolaBehaviour>().xSpeed = -2f;
+
+            Instantiate(pelota1, transform.position, Quaternion.identity);
             Instantiate(pelota2, transform.position, Quaternion.identity);
-            pelota2.GetComponent<Rigidbody2D>().velocity = new Vector2(this.GetComponent<Rigidbody2D>().velocity.x, GetComponent<Rigidbody2D>().velocity.y);
-            pelota2.GetComponent<Transform>().localScale = new Vector2(0.7f, 0.7f);
             Destroy(this.gameObject);
         }
     }
