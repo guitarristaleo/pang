@@ -7,8 +7,7 @@ public class DisparoBehaviour : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -36,5 +35,10 @@ public class DisparoBehaviour : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+    }
+
+    void OnDestroy()
+    {
+        playerPang.heDisparado = false;
     }
 }
