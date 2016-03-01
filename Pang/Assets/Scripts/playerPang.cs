@@ -12,6 +12,7 @@ public class playerPang : MonoBehaviour
     public static bool heDisparado = false;
     public bool moverIzq = true;
     public bool moverDer = true;
+    public static int bolas = 3;
 
     // Use this for initialization
     void Start()
