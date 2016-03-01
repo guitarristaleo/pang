@@ -33,11 +33,15 @@ public class ParabolaBehaviour : MonoBehaviour
         {
             Instantiate(pelota2, transform.position, Quaternion.identity);
             pelota2.GetComponent<ParabolaBehaviour2>().xSpeed = 2f;
+            playerPang.pelotaM++;
 
             Instantiate(pelota1, transform.position, Quaternion.identity);
             pelota1.GetComponent<ParabolaBehaviour2>().xSpeed = -2f;
+            playerPang.pelotaM++;
 
             Destroy(this.gameObject);
+            playerPang.pelotaL--;
+            playerPang.score += 400;
         }
     }
 

@@ -31,6 +31,8 @@ public class DestruirPelota : MonoBehaviour
         if (col.gameObject.tag == "Disparo")
         {
             Destroy(this.gameObject);
+            playerPang.pelotaS--;
+            playerPang.score += 1600;
         }
     }
 
