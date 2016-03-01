@@ -45,8 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DestruirPelota.cs" />
      <Compile Include="Assets\Scripts\DisparoBehaviour.cs" />
      <Compile Include="Assets\Scripts\ParabolaBehaviour.cs" />
+     <Compile Include="Assets\Scripts\ParabolaBehaviour2.cs" />
      <Compile Include="Assets\Scripts\balaPang.cs" />
      <Compile Include="Assets\Scripts\playerPang.cs" />
  <Reference Include="UnityEngine.UI">

@@ -25,17 +25,6 @@ public class DisparoBehaviour : MonoBehaviour {
             Destroy(this.gameObject);
         }
     }
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.tag == "Techo")
-        {
-            Destroy(this.gameObject);
-        }
-        if (collider.gameObject.tag == "Bola")
-        {
-            Destroy(this.gameObject);
-        }
-    }
 
     void OnDestroy()
     {

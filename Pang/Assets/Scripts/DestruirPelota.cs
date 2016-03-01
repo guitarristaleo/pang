@@ -6,7 +6,7 @@ public class DestruirPelota : MonoBehaviour
 
     public float xSpeed = 2f;
     public float ySpeed = 1f;
-    private float acceleration = -0.5f;
+    private float acceleration = -0.3f;
 
     void Update()
     {
@@ -28,11 +28,7 @@ public class DestruirPelota : MonoBehaviour
         {
 
         }*/
-
-    }
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.tag == "Disparo")
+        if (col.gameObject.tag == "Disparo")
         {
             Destroy(this.gameObject);
         }

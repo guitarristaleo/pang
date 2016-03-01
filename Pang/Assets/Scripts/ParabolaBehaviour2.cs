@@ -5,8 +5,9 @@ public class ParabolaBehaviour2 : MonoBehaviour {
 
     public float xSpeed = 2f;
     public float ySpeed = 1f;
-    private float acceleration = -0.5f;
-    public GameObject pelota1, pelota2;
+    private float acceleration = -0.3f;
+    public GameObject pelota1;
+    public GameObject pelota2;
 
     void Update()
     {
@@ -28,22 +29,18 @@ public class ParabolaBehaviour2 : MonoBehaviour {
         {
 
         }*/
-
-    }
-    void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.tag == "Disparo")
+        if (col.gameObject.tag == "Disparo")
         {
-            Destroy(this.gameObject);
-
             Instantiate(pelota2, transform.position, Quaternion.identity);
-            pelota2.GetComponent<ParabolaBehaviour>().xSpeed = 2f;
+            pelota2.GetComponent<DestruirPelota>().xSpeed = 2f;
 
             Instantiate(pelota1, transform.position, Quaternion.identity);
-            pelota1.GetComponent<ParabolaBehaviour>().xSpeed = -2f;            
+            pelota1.GetComponent<DestruirPelota>().xSpeed = -2f;
+
+            Destroy(this.gameObject);
         }
     }
-
+    
     void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.tag == "suelo")
